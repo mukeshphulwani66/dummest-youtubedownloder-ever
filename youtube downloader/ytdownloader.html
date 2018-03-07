@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dummest YT-downloader</title>
+    <style>
+    #con{
+        display:flex;
+        justify-content: center;
+        max-width: 70vw;
+        height: auto;
+        min-height: 40vh;
+        padding: 20px;
+        margin: 2px auto;
+        background: red;
+        color:white;
+        border:8px solid black;
+        box-sizing:content-box;
+        text-align: center;
+    }
+    input[type="button"]{
+        background:black;
+        color:white;
+        border:2px solid white;
+        border-radius: 4px;
+        font-size: 30px;
+    }
+    input[type="text"]{
+        height:30px;
+        border:2px solid black;
+        border-radius: 3px;
+    }
+    </style>
+</head>
+<body>
+    <div  id="con">
+        <div>
+    <h1>COPY PASTE YOUTUBE VIDEO LINK TO DOWNLOAD..!</h1>
+    <input style="width:50%" type="text" id="box" placeholder="   PLACE LINK HERE"><br><br>
+   <input type="button" onclick="window.location.href=dow()" value="download now">
+    </div>
+</div>
+    <script>
+            function dow(){
+             var p=document.getElementById("box").value;
+             var q=p;
+             temp = q.split("").splice(0,12).join("") +"ss"+q.split("").splice(12,q.length).join("");
+             return temp;
+            }
+            </script>
+
+</body>
+</html>
